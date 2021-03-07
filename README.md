@@ -1,55 +1,68 @@
-# Angular Sesión 4 - Ejercicios
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Vamos a realizar una Pokedex!
+## Available Scripts
 
-Dispones de la API de pokemons ofrecida por [https://pokeapi.co](https://pokeapi.co/)
+In the project directory, you can run:
 
-Haciendo uso de servicios de angular, httpclient, observables y componentes haz una petición que recupere una lista de pokemons ([https://pokeapi.co/api/v2/pokemon/](https://pokeapi.co/api/v2/pokemon/)) y los pinte en pantalla.
+### `npm start`
 
-La respuesta de la petición tiene la siguiente estructura:
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-```jsx
-{
-    "count": 964,
-    "next": "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
-    "previous": null,
-    "results": [
-        {
-            "name": "bulbasaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/1/"
-        },
-        {
-            "name": "ivysaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/2/"
-        },
-        {
-            "name": "venusaur",
-            "url": "https://pokeapi.co/api/v2/pokemon/3/"
-        },
-        {
-            "name": "charmander",
-            "url": "https://pokeapi.co/api/v2/pokemon/4/"
-        },
-        {
-            "name": "charmeleon",
-            "url": "https://pokeapi.co/api/v2/pokemon/5/"
-        }
-    ]
-}
-```
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-Como puedes observar, dentro de la propiedad results, encontrarás un listado de Pokemons. Por desgracia solo podrás ver su nombre. El resto de propiedades del pokemon podrás consultarlos en su URL, haciendo una nueva petición. Por ejemplo para Venasur tendrás que hacer una petición a [https://pokeapi.co/api/v2/pokemon/3](https://pokeapi.co/api/v2/pokemon/3)
+### `npm test`
 
-Haz que al clicar en el nombre de un pokemon, te pinte sus detalles en la parte de la derecha. Verás que hay muchos datos… basta con que pintes su imagen, su nombre, su peso y su altura.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-NOTA: la imagen está en sprites -> front_default
+### `npm run build`
 
-Dentro del proyecto encontrarás una aplicación de Angular vacía sobre la cual empezar a realizar tus desarrolos. Recuerda que deberás realizar un servicio, interfaces para los datos, un componente para visualizar un Pokemon.. etc
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Mucho ánimo!
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-### BONUS
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Cuando recibas la respuesta de la petición de pokemons, realiza una petición extra para cada uno de ellos, de manera que obtengas toda la información de los pokemons para poder pintarla en la pantalla inicial de la siguiente forma:
+### `npm run eject`
 
-![assets/pokemon.gif](assets/pokemon.gif)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
